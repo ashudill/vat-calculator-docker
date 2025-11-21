@@ -37,6 +37,7 @@ function App() {
   return (
     <div className='header field'>
       Ashish 4rd version VAT CALCULATOR
+      console.log("%cAshish Change Calculator published in live ", "font-weight: bold; font-size: 24px;");
       <div className='colour-border'>
         <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
         <PriceEntryField customstyle="field" label="Price excl VAT: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
